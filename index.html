@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+  /* Your Copy/Pasted CSS styles from the D3 or plotly Template */
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<body>
+
+  <!-- Lets use:
+    https://bl.ocks.org/mbostock/aca51512895bd03855efa67aebec474b
+  -->
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script>
+    // LAMBDA SCHOOL
+    //
+    // MACHINE LEARNING
+    //
+    // MIT LICENSE
+
+    // Your Copy/Pasted D3 Template Code
+    // Primary challenge: Match data format between
+    // your ML output and the D3 Template.
+    // Remember data orientation, matrix shape, challenges, etc?
+    // console.log is crucial.
+    var trace1 = {
+      x: [1, 2, 3, 4],
+      y: [10, 15, 13, 17],
+      mode: 'markers',
+      type: 'scatter'
+    };
+
+    var trace2 = {
+      x: [2, 3, 4, 5],
+      y: [16, 5, 11, 9],
+      mode: 'lines',
+      type: 'scatter'
+    };
+
+    var trace3 = {
+      x: [1, 2, 3, 4],
+      y: [12, 9, 15, 12],
+      mode: 'lines+markers',
+      type: 'scatter'
+    };
+
+    var data = [trace1, trace2, trace3];
+    // timeout required so that page will have rendered before newPlot
+    // is called.
+    setTimeout( function(){Plotly.newPlot('plotlyPlot', data)}, 200);
+  </script>
+
+  <div class="container">
+    <h1>Building Web Pages</h1>
+
+    <div id="plotlyPlot" class="row"></div>
+
+    <h1>Example</h1>
+    <p>
+    The above graph is imported from the Plotly <a href="https://plot.ly/javascript/line-and-scatter/">example website</a>. Many more examples are provided by Plotly that you can take advantage of in this exact same fashion. Also, examples in D3 or any other web platform will follow a similar structure.
+    </p>
+
+    <p>
+    Load this file in a code editor in order to make changes to it. Note the three <code>trace</code> objects:
+    
+    <pre>
+      <code>
+        // Your Copy/Pasted D3 Template Code
+        // Primary challenge: Match data format between
+        // your ML output and the D3 Template.
+        // Remember data orientation, matrix shape, challenges, etc?
+        // console.log is crucial.
+        var trace1 = {
+          x: [1, 2, 3, 4],
+          y: [10, 15, 13, 17],
+          mode: 'markers',
+          type: 'scatter'
+        };
+
+        var trace2 = {
+          x: [2, 3, 4, 5],
+          y: [16, 5, 11, 9],
+          mode: 'lines',
+          type: 'scatter'
+        };
+
+        var trace3 = {
+          x: [1, 2, 3, 4],
+          y: [12, 9, 15, 12],
+          mode: 'lines+markers',
+          type: 'scatter'
+        };
+
+        var data = [trace1, trace2, trace3];
+        // timeout required so that page will have rendered before newPlot
+        // is called.
+        setTimeout( function(){Plotly.newPlot('plotlyPlot', data)}, 200);
+      </code>
+    </pre>
+    </p>
+
+    <p>
+    You can see that the `x` and `y` values are defined within your website code here. It is a trivial step to update these values with real values that reflect whatever you are researching or reporting.
+
+    <h1>Assignment</h1>
+
+    <p>
+    Modify the below graph to contain data samples from our data analysis:
+    <a href="https://colab.research.google.com/drive/1o7oxjsusm1lqQYR3MTK3wXGkNgrGqFpF">High Dimensional Coding Challenge</a>.
+    </p>
+
+    <p>
+    Dynamic data can be loaded into a website in this fashion - and some incredible dynamic charts are available at:
+    </p>
+
+    <p>
+    <a href="https://d3js.org">D3</a> and <a href="https://bl.ocks.org/mbostock">Mike Bostock's Blocks </a>
+    </p>
+   
+  </div>
+<body>
+
