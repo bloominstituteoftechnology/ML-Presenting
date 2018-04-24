@@ -30,5 +30,13 @@ Choose "Get started for free" and create an account at netlify. Use your Github 
 
 Follow the instructions to deploy the github repository that you just created and modified. Follow the url to your first website!
 
+Overleaf: Design of: Reports for internal communication, submissions to publication, professional letters
 
+Codecogs: LaTeX images for web sites
+
+Dynamic graphs
+
+Static graphs
+
+Website: Reporting to the public.
 
